@@ -18,6 +18,7 @@ Return the solution
 
 int main()
 {
+	cout << "This is the advanced calculator" << endl;
 	//This is a placeholder
 }
 
