@@ -18,6 +18,7 @@ Return the solution
 
 int main()
 {
+	cout << "Testing 1,2,3" << endl;
 	//This is a placeholder
 }
 
