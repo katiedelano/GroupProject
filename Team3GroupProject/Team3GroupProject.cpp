@@ -6,6 +6,8 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include <string>
+#include <vector>
 using namespace std;
 
 /*
@@ -18,17 +20,38 @@ Return the solution
 
 int main()
 {
+	int arrayLength;
+	vector<string> parsedInput;
+	
 	// Prompt user for equation
 	
-	// Parse each number/operator into an array object
+	// Parse each number/operator into an array object (delimiters should be " ", "+", "-", "*", "/"...)
+	
+
 	
 	// Iterate through array looking for operators
+
+	for (int i = 0; i < parsedInput.size(); i++)
+	{
+		// When an operator is found, pass it and it's neighboring elements to the mathFunction	
+
+
+		if (parsedInput[i] == "+" || parsedInput[i] == "-" || parsedInput[i] == "*" || parsedInput[i] == "/")
+		{
+			string result = mathFunction(stod(parsedInput[i - 1]), (parsedInput[i]), stod(parsedInput[i + 1]));
+			parsedInput[i - 1].erase();
+			parsedInput[i + 1].erase();
+			parsedInput[i] = result;
+			i = 0;
+			// Replace 3 array elements with the method result
+
+			// Repeat until no operators exist and array length is 1
+		}
+
+	}
+
 	
-	// When an operator is found, pass it and it's neighboring elements to the mathFunction	
-	
-	// Replace 3 array elements with the method result
-	
-	// Repeat until no operators exist and array length is 1
+
 	
 	// Print the equation and solution for the user
 	
@@ -39,7 +62,7 @@ int main()
 	//This is a placeholder
 }
 
-double mathFunction(double value1, string op, double value2)
+string mathFunction(double value1, string op, double value2)
 {
 	//This is a placeholder
 	return 0;
