@@ -9,31 +9,27 @@ int main()
     //This is a placeholder
 }
 
-double mathFunction(double value1, string op, double value2, double answer)
+double mathFunction(double value1, string op, double value2)
 {
+    double answer = 0;
+    
     if (op == "+")
     {
-        cout << value1 + value2;
-        cin >> answer;
+        answer = value1 + value2;
     }
     
     else if (op == "-")
     {
-        cout << value1 - value2;
-        cin >> answer;
+        answer = value1 - value2;
     }
     
     else if (op == "*")
     {
-        cout << value1 * value2;
-        cin >> answer;
-        
+        answer = value1 * value2;        
     }
     else if (op == "/")
     {
-        cout << value1 / value2;
-        cin >> answer;
-        
+        answer = value1 / value2;
     }
     return answer;
 }
