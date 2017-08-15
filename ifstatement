@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+int main()
+
+{
+    cout << "Testing 1,2,3" << endl;
+    cout << "Testing 4,5,6" << endl;
+    //This is a placeholder
+}
+
+double mathFunction(double value1, string op, double value2, double answer)
+{
+    if (op == "+")
+    {
+        cout << value1 + value2;
+        cin >> answer;
+    }
+    
+    else if (op == "-")
+    {
+        cout << value1 - value2;
+        cin >> answer;
+    }
+    
+    else if (op == "*")
+    {
+        cout << value1 * value2;
+        cin >> answer;
+        
+    }
+    else if (op == "/")
+    {
+        cout << value1 / value2;
+        cin >> answer;
+        
+    }
+    return answer;
+}
