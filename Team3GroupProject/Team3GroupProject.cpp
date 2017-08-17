@@ -29,6 +29,7 @@ int main()
 	
 
 	parsedInput.push_back("Test");
+	parsedInput.push_back("Test2");
 
 	
 	// Iterate through array looking for operators
