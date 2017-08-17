@@ -28,6 +28,8 @@ int main()
 	// Parse each number/operator into an array object (delimiters should be " ", "+", "-", "*", "/"...)
 	
 
+	parsedInput.push_back("Test");
+
 	
 	// Iterate through array looking for operators
 
@@ -49,8 +51,6 @@ int main()
 		}
 
 	}
-
-	
 
 	
 	// Print the equation and solution for the user
