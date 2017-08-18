@@ -65,6 +65,24 @@ int main()
 
 string mathFunction(double value1, string op, double value2)
 {
-	//This is a placeholder
-	return 0;
-}
+    double answer = 0;
+    
+    if (op == "+")
+    {
+        answer = value1 + value2;
+    }
+    
+    else if (op == "-")
+    {
+        answer = value1 - value2;
+    }
+    
+    else if (op == "*")
+    {
+        answer = value1 * value2;        
+    }
+    else if (op == "/")
+    {
+        answer = value1 / value2;
+    }
+    return answer;
