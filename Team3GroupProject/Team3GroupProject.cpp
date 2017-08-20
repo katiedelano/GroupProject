@@ -65,11 +65,11 @@ int main()
 
 string mathFunction(double value1, string op, double value2)
 {
-    double answer = 0;
+    double answer = 0;  //initialize answer variable
     
     if (op == "+")
     {
-        answer = value1 + value2;
+        answer = value1 + value2;   
     }
     
     else if (op == "-")
