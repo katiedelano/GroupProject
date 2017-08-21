@@ -63,26 +63,26 @@ int main()
 	//This is a placeholder
 }
 
-string mathFunction(double value1, string op, double value2)
+string mathFunction(double value1, string op, double value2)    /*declare variables needed for mathFunction, using string becuase it contains multiple characters*/
 {
     double answer = 0;  //initialize answer variable
     
-    if (op == "+")
+    if (op == "+")  //if +
     {
-        answer = value1 + value2;   
+        answer = value1 + value2;   //addition equation
     }
     
-    else if (op == "-")
+    else if (op == "-")     //if -
     {
-        answer = value1 - value2;
+        answer = value1 - value2;   //subtraction equation
     }
     
-    else if (op == "*")
+    else if (op == "*")     //if *
     {
-        answer = value1 * value2;        
+        answer = value1 * value2;        // multiplication equation
     }
-    else if (op == "/")
+    else if (op == "/")         // if /
     {
-        answer = value1 / value2;
+        answer = value1 / value2;   // division equation
     }
-    return answer;
+    return answer;      //displays answer to equation
