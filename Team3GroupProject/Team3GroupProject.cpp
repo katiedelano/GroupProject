@@ -24,6 +24,24 @@ int main()
 	vector<string> parsedInput;
 	
 	// Prompt user for equation
+	/*  (Copied from Mohamed's repository)
+	int result;
+
+	cout << " Enter in a mathematical expression  : " << endl; 
+
+	cin >> result; //This the users result of the mathematical expression
+
+	cout  << " Enter in a mathematical expression :  " << endl; 
+
+	cin >> result; //This is the users result of the mathematical expression
+
+	cout << " Enter in a mathematical expression :  "  << endl;
+
+	cin >> result; //This is the users result of the mathematical expression
+
+	*/
+
+	
 	
 	// Parse each number/operator into an array object (delimiters should be " ", "+", "-", "*", "/"...)
 	
