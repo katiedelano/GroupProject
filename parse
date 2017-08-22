@@ -1,0 +1,55 @@
+int main()
+{
+	int nextnum; //next number
+	int nextop; //next operator
+	int calculate(int, int, int);
+
+	int sum = 0;
+	string calc;
+	do {
+		cout << "Enter an equation:  \n";
+		int num = nextnum(calc);
+		int op = nextop(calc);
+		sum = calculate(num, sum, op);
+	} while (getline(cin, calc, '='));
+	cout << "Your equation equals " << sum << endl;
+	return 0;
+	int nextnum(string n);
+	{
+		char ch;
+		int x;
+		while (n.get(ch))
+			if (ch > '0'&&ch <= '9')
+			{
+				cin.putback(ch);
+				cin >> x;
+				break;
+			}
+		return x;
+	}
+
+
+	int nextop(string o)
+	{
+		char cha;
+		int y;
+		while (o.get(ch))
+			if (cha == '+')		{ cin.putback(cha); y = 1; break; }
+			else if (cha == '-') { cin.putback(cha);y = 2;break; }
+			else if (cha == '*') { cin.putback(cha);y = 3;break; }
+			else if (cha == '/') { cin.putback(cha);y = 4;break; }
+			else if (cha == ' ') { cin.putback(cha); y = 5;break; }
+			else if {y = 0; break;}
+			return y;
+	}
+	int calculate(int num, int sum, int op)
+	{
+		switch (op)
+		{
+		case 1: {sum += num; break;}
+		case 2: {sum -= num; break;}
+		case 3: {sum *= num; break;}
+		case 4: {sum /= num; break;}
+		case 5: {' '; break;}
+		}
+	}
