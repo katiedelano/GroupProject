@@ -25,19 +25,32 @@ int main()
 	
 	// Prompt user for equation
 	/*  (Copied from Mohamed's repository)
-	int result;
+	string mathExpression;
 
-	cout << " Enter in a mathematical expression  : " << endl; 
+	string userInput;
 
-	cin >> result; //This the users result of the mathematical expression
+	double result;
 
-	cout  << " Enter in a mathematical expression :  " << endl; 
+	cout << " Enter in a mathematical expression  : " << endl; // Were asking the user to enter in a mathematical expression.
 
-	cin >> result; //This is the users result of the mathematical expression
+	getline(cin, userInput); // This saves the user input of the users mathematical expression.
 
-	cout << " Enter in a mathematical expression :  "  << endl;
 
-	cin >> result; //This is the users result of the mathematical expression
+	// This is the validation part to see if the user enters a valid number or not.
+
+
+	if (userInput==mathExpression)
+	{
+		cout << " The number you enterd is a valid mathematical expression ";
+	}
+
+	else {
+
+		cout << " The number you enterd is invalid. Please re-enter a valid mathematical expression";
+	}
+
+	cout << " The result of your mathematical expression equals to : " << result << endl; // This will display the result of the mathematical expression.
+
 
 	*/
 
